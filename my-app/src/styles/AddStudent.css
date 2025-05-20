@@ -1,0 +1,53 @@
+:root {
+  --background-dark: #121212;
+  --background-darker: #0a0a0a;
+  --surface: #1e1e1e;
+  --surface-light: #2d2d2d;
+  --primary: #6366f1;
+  --primary-dark: #4f46e5;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+  --text-tertiary: #6b7280;
+  --border: #374151;
+}
+.add-student-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--surface);
+}
+
+.add-student-form input,
+.add-student-form select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+  border: 1px gray ;
+  color: var(--text-primary);
+  border-radius: 6px;
+  background-color:var(--surface-light);
+}
+
+.add-student-form button {
+  width: 100%;
+  padding: 10px;
+  --primary-dark: #4f46e5;
+  background-color: var( --primary-dark);
+  color: var(--text-primary);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 1rem;
+}
