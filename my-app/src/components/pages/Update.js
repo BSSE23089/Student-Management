@@ -1,8 +1,11 @@
 import React from "react";
 
 const Update = ({ student, onClose, onUpdate }) => {
-  if (!student) return null;
-
+  if (!student) {
+    return null;
+  }
+   
+   
   const computeStatus = (attendance, grade) => {
     const att = parseInt(attendance);
     const activeGrades = ["A", "A-", "B+", "B", "B-", "C+", "C"];

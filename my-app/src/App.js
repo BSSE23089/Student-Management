@@ -10,7 +10,6 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/add-student" element={<AddStudent />} />
         <Route path="/edit-student/:id" element={<AddStudent />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

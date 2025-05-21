@@ -66,6 +66,11 @@ const Home = () => {
     setLoading(false);
   }, []);
 
+  useEffect(() => {
+    const stored = loadStudents();
+    setStudents(stored || []);
+  }, [activeTab]);
+
   const filteredStudents = students.filter((s) =>
     s.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     s.course.toLowerCase().includes(searchTerm.toLowerCase())
